@@ -16,7 +16,7 @@ function msg(){
     show.innerHTML = result
     console.log(result);
 }
-    
+   console.log("Bas") 
     
 
 
