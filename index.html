@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        // var m, n;
+        // for(m=1;m<=5;m++)
+        // {
+        // for(n=m;n<=5;n++)
+        // {
+        // document.write(""+n+" ");
+        // }
+        // document.write('<br/>');
+        // }
+        function Bas(num){
+        // var num = 5;
+        var m, n,k
+        for (m = num; m >= 0; m--) {
+            for(k = 1 ; k <= (num-m); k++){
+                console.log(k)
+                document.write('&nbsp;')
+            }
+            for (n = 1; n <= m; n++)
+                document.write(" " + " * "+ " ");
+            document.write('<br/>');
+        }
+        for (m = 1; m <= num; m++) {
+            for(k = 1 ; k <= (num-m); k++){
+                document.write('&nbsp;')
+            }
+            for (n = 1; n <= m; n++)
+                document.write(" * ");
+            document.write('<br/>');
+        }
+        for (m = num; m >= 0; m--) {
+            for(k = 1 ; k <= (num-m); k++){
+                document.write('&nbsp;')
+            }
+            for (n = 1; n <= m; n++)
+                document.write(" " + " * "+ " ");
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+    }
+    Bas(10);
+    </script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+</body>
+
+</html>
